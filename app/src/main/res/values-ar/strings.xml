@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">تيلي جوب</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- setup activity -->
+    <string name="ed_fullName">أدخل أسمك بالكامل</string>
+    <string name="ed_career">أختر الوظيفة</string>
+    <string name="ed_specification">أدخل التخصص</string>
+    <string name="ed_phone">أدخل رقم الهاتف</string>
+    <string name="ed_address">أدخل العنوان</string>
+    <string name="ed_city">أختر المدينه</string>
+    <string name="ed_country">أختر الدولة</string>
+    <string name="ed_attach_image">أرفاق صورة تثبت مهنتك</string>
+    <string name="btn_save_profile">حفظ</string>
+    <string name="btn_next_profile">التالي</string>
+    <string name="comment_of_post">تعليقات علي المنشور</string>
+    <string name="image_post_name">صورة المنشور</string>
+    <string name="profile_worker">الملف الشخصي ل</string>
+
+    <!-- register activity -->
+    <string name="ed_email">أدخل البريد الإلكتروني</string>
+    <string name="ed_password">أدخل الرقم السري</string>
+    <string name="ed_con_password">تأكيد الرقم السري</string>
+    <string name="description_text_register">سوف تصل إلي القمة</string>
+    <string name="btn_register">إنشاء الحساب</string>
+
+    <!-- login activity -->
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">الرقم السري</string>
+    <string name="description">سوف تجد أفضل المهن</string>
+    <string name="create_new_account">إنشاء حساب جديد</string>
+    <string name="forget_password">نسيت كلمةالسر</string>
+    <string name="make_new_account">قم بإنشاء حساب جديد</string>
+    <string name="btn_login">تسجيل الدخول</string>
+
+    <!-- Profile Settings -->
+    <string name="action_edit"> تعديل بياناتك الشخصية</string>
+    <string name="action_become_worker">يصبح عاملا</string>
+
+
+    <string-array name="careers">
+        <item>طبيب بشري</item>
+        <item>مبرمج مواقع</item>
+        <item>مبرمج تطبيقات اندرويد</item>
+        <item>ذكاء اصطناعي</item>
+        <item>محلل</item>
+        <item>طبيب اسنان</item>
+        <item>مبرمج</item>
+        <item>مهندس</item>
+        <item>صيدلي</item>
+        <item>شركة</item>
+        <item>عامل</item>
+        <item>محاسب</item>
+        <item>مُصمم</item>
+        <item>حلاق</item>
+        <item>فني</item>
+        <item>خباز</item>
+        <item>ميكانيكي</item>
+        <item>شيف</item>
+        <item>نجار</item>
+        <item>رجل أعمال</item>
+        <item>عالم أحياء</item>
+        <item>عالم</item>
+        <item>صجفي</item>
+        <item>سائق</item>
+        <item>طيار</item>
+        <item>مدرب</item>
+        <item>غواص</item>
+        <item>سكرتير</item>
+        <item>مصور</item>
+        <item>بناء</item>
+        <item>كميائي</item>
+        <item>مُزارع</item>
+        <item>مجال زراعي</item>
+        <item>محامي</item>
+        <item>مدرس</item>
+
+    </string-array>
+
+    <string-array name="cities">
+        <item>القاهرة</item>
+        <item>الأسكندرية</item>
+        <item>الجيزة</item>
+        <item>القليوبية</item>
+        <item>بور سعيد</item>
+        <item>السويس</item>
+        <item>الغربية</item>
+        <item>الدقهلية</item>
+        <item>أسيوط</item>
+        <item>القيوم</item>
+        <item>الشرقية</item>
+        <item>الأسماعلية</item>
+        <item>أسوان</item>
+        <item>البحيرة</item>
+        <item>المنيا</item>
+        <item>دمياط</item>
+        <item>الأقصر</item>
+        <item>قنا</item>
+        <item>بني سويف</item>
+        <item>سوهاج</item>
+        <item>المنوفية</item>
+        <item>البحر الأحمر</item>
+        <item>كفر الشيخ</item>
+        <item>شمال سيناء</item>
+        <item>مطروح</item>
+        <item>الوادي الجديد</item>
+        <item>جنوب سيناء</item>
+        <item>Kabul</item>
+        <item>Tirana</item>
+        <item>الجزائر</item>
+        <item>Andorra la Vella</item>
+        <item>Luanda</item>
+        <item>Buenos Aires</item>
+        <item>Yerevan</item>
+        <item>Canberra</item>
+        <item>Vienna</item>
+        <item>Baku</item>
+        <item>Nassau</item>
+        <item>المنامة</item>
+        <item>Dhaka</item>
+        <item>Bridgetown</item>
+        <item>Minsk</item>
+        <item>Brussels</item>
+        <item>Belmopan</item>
+        <item>Porto Novo</item>
+        <item>Thimphu</item>
+        <item>La Paz</item>
+        <item>Sucre</item>
+        <item>Sarajevo</item>
+        <item>Gaborone</item>
+        <item>Brasilia</item>
+        <item>Bandar Seri Begawan</item>
+        <item>Sofia</item>
+        <item>Ouagadougou</item>
+        <item>Gitega</item>
+        <item>Phnom Penh</item>
+        <item>Yaounde</item>
+        <item>Ottawa</item>
+        <item>Praia da Luz</item>
+        <item>Bangui</item>
+        <item>Santiago</item>
+        <item>Beijing</item>
+        <item>Bogota</item>
+        <item>موروني</item>
+        <item>Kinshasa</item>
+        <item>Brazzaville</item>
+        <item>San Jose</item>
+        <item>Yamoussoukro</item>
+        <item>Zagreb</item>
+        <item>Havana</item>
+        <item>Nicosia</item>
+        <item>Prague</item>
+        <item>Copenhagen</item>
+        <item>جيبوتي</item>
+        <item>Roseau</item>
+        <item>Santo Domingo</item>
+        <item>Dili</item>
+        <item>Quito</item>
+        <item>San Salvador</item>
+        <item>London</item>
+        <item>Malabo</item>
+        <item>Asmara</item>
+        <item>Tallinn</item>
+        <item>Mbabana</item>
+        <item>Addis Ababa</item>
+        <item>Palikir</item>
+        <item>Suva</item>
+        <item>Helsinki</item>
+        <item>Paris</item>
+        <item>Libreville</item>
+        <item>Banjul</item>
+        <item>Tbilisi</item>
+        <item>Berlin</item>
+        <item>Accra</item>
+        <item>Athens</item>
+        <item>Saint George</item>
+        <item>Saint Jone</item>
+        <item>Guatemala City</item>
+        <item>Conakry</item>
+        <item>Bissau</item>
+        <item>Georgetown</item>
+        <item>Port au Prince</item>
+        <item>Tegucigalpa</item>
+        <item>Budapest</item>
+        <item>Reykjavik</item>
+        <item>New Delhi</item>
+        <item>Jakarta</item>
+        <item>طهران</item>
+        <item>بغداد</item>
+        <item>Dublin</item>
+        <item>Jerusalem</item>
+        <item>Rome</item>
+        <item>Kingston</item>
+        <item>Tokyo</item>
+        <item>عُمان</item>
+        <item>Nur-Sultan</item>
+        <item>Nairobi</item>
+        <item>Tarawa Atoll</item>
+        <item>Pristina</item>
+        <item>مدينة الكويت</item>
+        <item>Bishkek</item>
+        <item>Vientiane</item>
+        <item>Riga</item>
+        <item>بيروت</item>
+        <item>Maseru</item>
+        <item>Monrovia</item>
+        <item>Tripoli</item>
+        <item>Vaduz</item>
+        <item>Vilnius</item>
+        <item>Luxembourg</item>
+        <item>Antananarivo</item>
+        <item>Lilongwe</item>
+        <item>Kuala Lumpur</item>
+        <item>Male</item>
+        <item>Bamako</item>
+        <item>Valletta</item>
+        <item>Majuro</item>
+        <item>نواكشوط</item>
+        <item>Port Louis</item>
+        <item>Mexico City</item>
+        <item>Chisinau</item>
+        <item>Monaco</item>
+        <item>Ulaanbaatar</item>
+        <item>Podgorica</item>
+        <item>الرباط</item>
+        <item>Maputo</item>
+        <item>Nay Pyi Taw</item>
+        <item>New York</item>
+        <item>Windhoek</item>
+        <item>Kathmandu</item>
+        <item>Amsterdam</item>
+        <item>Wellington</item>
+        <item>Managua</item>
+        <item>Niamey</item>
+        <item>يافا</item>
+        <item>القدس</item>
+        <item>رام الله</item>
+        <item>Abuja</item>
+        <item>Pyongyang</item>
+        <item>Skopje</item>
+        <item>Belfast</item>
+        <item>Oslo</item>
+        <item>Muscat</item>
+        <item>Islamabad</item>
+        <item>Melekeok</item>
+        <item>Panama City</item>
+        <item>Port Moresby</item>
+        <item>Asuncion</item>
+        <item>Lima</item>
+        <item>Manila</item>
+        <item>Warsaw</item>
+        <item>Lisbon</item>
+        <item>الدوحة</item>
+        <item>Bucharest</item>
+        <item>Moscow</item>
+        <item>Kigali</item>
+        <item>Basseterre</item>
+        <item>Castries</item>
+        <item>Kingstown</item>
+        <item>Apia</item>
+        <item>San Marino</item>
+        <item>Sao Tome</item>
+        <item>الرياض</item>
+        <item>Edinburgh</item>
+        <item>Dakar</item>
+        <item>Belgrade</item>
+        <item>Victoria</item>
+        <item>Freetown</item>
+        <item>Singapore</item>
+        <item>Bratislava</item>
+        <item>Ljubljana</item>
+        <item>Honiara</item>
+        <item>Mogadishu</item>
+        <item>Pretoria</item>
+        <item>Bloemfontein</item>
+        <item>Cape Town</item>
+        <item>Seoul</item>
+        <item>جوبا</item>
+        <item>Madrid</item>
+        <item>Colombo</item>
+        <item>الخرطوم</item>
+        <item>Paramaribo</item>
+        <item>Stockholm</item>
+        <item>Bern</item>
+        <item>دمشق</item>
+        <item>Taipei</item>
+        <item>Dushanbe</item>
+        <item>Dodoma</item>
+        <item>Bangkok</item>
+        <item>Lome</item>
+        <item>Port of Spain</item>
+        <item>تونس</item>
+        <item>Ankara</item>
+        <item>Ashgabat</item>
+        <item>Funafuti</item>
+        <item>Kampala</item>
+        <item>Kiev</item>
+        <item>أبو ظبي</item>
+        <item>London</item>
+        <item>Washington</item>
+        <item>Montevideo</item>
+        <item>Tashkent</item>
+        <item>Port Vila</item>
+        <item>Vatican City</item>
+        <item>Caracas</item>
+        <item>Hanoi</item>
+        <item>Cardiff</item>
+        <item>Lusaka</item>
+        <item>Harare</item>
+    </string-array>
+
+    <string-array name="countries">
+        <item>أفغانستان</item>
+        <item>Albania</item>
+        <item>الجزائر</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>البحرين</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>British Virgin Islands</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Canary Islands</item>
+        <item>Cape Verde</item>
+        <item>Cayman Islands</item>
+        <item>Central African Republic</item>
+        <item>Ceuta and Melilla</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>جزر القُمر</item>
+        <item>Congo [DRC]</item>
+        <item>Congo [Republic]</item>
+        <item>Costa Rica</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Curaçao</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Côte d’Ivoire</item>
+        <item>Denmark</item>
+        <item>جيبوتي</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>Ecuador</item>
+        <item>مصر</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Europe</item>
+        <item>Faroe Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>French Guiana</item>
+        <item>French Polynesia</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guernsey</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>إيران</item>
+        <item>العراق</item>
+        <item>Ireland</item>
+        <item>Isle of Man</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jersey</item>
+        <item>الأردن</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>الكويت</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latin America</item>
+        <item>Latvia</item>
+        <item>لبنان</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>لبيا</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macau</item>
+        <item>Macedonia [FYROM]</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Martinique</item>
+        <item>موريتانيا</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>المغرب</item>
+        <item>Mozambique</item>
+        <item>Myanmar [Burma]</item>
+        <item>Namibia</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>New Caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>North Korea</item>
+        <item>Northern Mariana Islands</item>
+        <item>Norway</item>
+        <item>سلطنة عَمان</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>فلسطين</item>
+        <item>panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>قطر</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Réunion</item>
+        <item>Saint Barthélemy</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Martin</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>الممكلة العربية السعودية</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Sint Maarten</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>الصومال</item>
+        <item>South Africa</item>
+        <item>South Korea</item>
+        <item>جنوب السودان</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>السودان</item>
+        <item>Suriname</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>سوريا</item>
+        <item>São Tomé and Príncipe</item>
+        <item>Taiwan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Timor-Leste</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>تركيا</item>
+        <item>Turks and Caicos Islands</item>
+        <item>U.S. Outlying Islands</item>
+        <item>U.S. Virgin Islands</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>الإمارات العربية المتحدة</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Western Sahara</item>
+        <item>اليمن</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+        <item>Åland Islands</item>
+    </string-array>
+
+    <!-- choose your category -->
+
+    <string-array name="switch_account">
+        <item>أختر فئتك</item>
+        <item>مستخدم</item>
+        <item>مَهَني</item>
+    </string-array>
+
+    <string name="menu_home">الصفحة الرئيسية</string>
+    <string name="menu_profile">الملف الشخصي</string>
+    <string name="menu_search">ابحث عن المَهَنيين</string>
+    <string name="menu_report">إبلاغ عن مشكلة</string>
+    <string name="menu_chat">الدردشة</string>
+    <string name="menu_review">تقييم التطبيق</string>
+    <string name="post">إنشاء منشور</string>
+    <string name="menu_logout">تسجيل الخروج</string>
+    <string name="main_first">الأنشطة الرئيسية</string>
+    <string name="main_second">ابداء الاراء</string>
+    <string name="main_third">تسجيل الخروج</string>
+
+    <string name="username">أسم المستخدم</string>
+    <string name="career">المهنة</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="specification">التخصص</string>
+    <string name="city">المدينة</string>
+    <string name="address">العنوان</string>
+    <string name="country">الدولة</string>
+    <string name="delete">حذف</string>
+    <string name="hide">اخفاء</string>
+    <string name="add_post">اضافة منشور</string>
+
+    <string name="edit_comment">تعديل التعليق</string>
+    <string name="edit_post">تعديل المنشور</string>
+
+    <string name="delete_post">حذف المنشور</string>
+
+    <string name="edit_opinion">تعديل الرأي</string>
+
+    <string name="search_chat_user">ايدا الدردشة</string>
+    <string name="setting_app">اعدادات التطبيق</string>
+    <string name="settings">الاعدادات</string>
+    <string name="edit_profile">تعديل الصفحة الشخصية</string>
+    <string name="notification">الاشعارات</string>
+    <string name="lock">غلق</string>
+    <string name="image_career">صورة المهنة</string>
+    <string name="logo_splash">لوجو </string>
+    <string name="choose_your_category">اختر فئتك</string>
+
+    <string name="image_logo_login">صورة الوجو</string>
+    <string name="image_post">صورة المنشور</string>
+    <string name="btn_close_image">حذف الصورة</string>
+    <string name="profile_data">البيانات الشخصية</string>
+
+    <string name="post_btn">نشر</string>
+    <string name="send_btn">أرسال</string>
+    <string name="btn_edit">تعديل</string>
+    <string name="attach_image_post">صورة</string>
+    <string name="write_something">اكتب شيئا؟</string>
+    <string name="complaint_report">اكتب شكوتك؟</string>
+    <string name="write_comment">أكتب تعليق</string>
+    <string name="btn_comment">تعليق</string>
+    <string name="date_post">التاريخ</string>
+    <string name="like_post">اعجاب بالمنشور</string>
+    <string name="notify">ابلاغ</string>
+    <string name="time_post">الوقت</string>
+    <string name="copy_right">حقوق النشر © 2021. جميع الحقوق محفوظه</string>
+    <string name="add_comment">أضافة التعليق</string>
+    <string name="search">بحث</string>
+    <string name="activities">المنشورات</string>
+    <string name="report_user">إبلاغ</string>
+    <string name="opinion_user">اضافة راي</string>
+    <string name="opinion_user_view">أظهار الاراء</string>
+    <string name="view_opinion_me">عرض أراء المستخدمين عنك</string>
+    <string name="reset_password">أعادة الرقم السري</string>
+    <string name="wrong_action">ما هو العمل الخاطئ،</string>
+    <string name="happen">التي حدثت من</string>
+    <string name="prove">أضف صورة لإثبات تقريرك</string>
+    <string name="rate_worker">اضف رايك الي</string>
+    <string name="opinion_about">أراء عن</string>
+    <string name="rating">التقييم</string>
+    <string name="opinion_help">رايك سيساعد في اختيار افضل العمال، الذين ستتعامل معهم</string>
+    <string name="back">رجوع</string>
+    <string name="sharda">-</string>
+
+    <string name="email_wrong">البريد الإلكتروني غير صحيح</string>
+
+    <string name="search_career_worker">ابحث الآن عن الوظيفة التي تريدها</string>
+
+    <string name="report_comment">الإبلاغ عن التعليق</string>
+    <string name="report_post">الإبلاغ عن المنشور</string>
+    <string name="report_opinion">الإبلاغ عن الرأي</string>
+
+    <string name="question">إبلاغ عنه؟</string>
+
+    <string name="this_user_report">ماذا فعل هذا المستخدم لكي تقوم بالتبليغ عن رأيه؟</string>
+
+    <string name="text_forget_one">إعادة تعيين كلمة المرور عن طريق إدخال البريد الإلكتروني الخاص بك</string>
+    <string name="text_forget_two">سوف ترسل رسالة إلى بريدك الإلكتروني،</string>
+    <string name="text_forget_three">لاعادة تعيين كلمة المرور</string>
+    <string name="text_forget_four">إذا نسيت بريدك الإلكتروني،</string>
+    <string name="text_forget_five">انشاء حساب جديد</string>
+    <string name="write_opinion">أكتب رأيك</string>
+    <string name="ok_btn">موافق</string>
+    <string name="email_forget">أدخل بريدك الإلكتروني</string>
+    <string name="reset_btn">إعادة تعيين</string>
+    <string name="career_not_found">هذة المهنة ليست موجودة</string>
+
+    <string name="update_post">تم تحديث المنشور</string>
+    <string name="update_comment">تم تحديث التعليق</string>
+    <string name="update_opinion">تم تحديث الرأي</string>
+
+    <string name="add_opinion">إضافة رأي</string>
+    <string name="view_opinion">عرض الأراء</string>
+
+    <string name="undo">حذف</string>
+
+    <string name="opinion_not_deleted">تم حذف هذا الرأي بالفعل</string>
+    <string name="opinion_not_edit">لا يمكن التعديل ، هذا الرأي محذوف بالفعل</string>
+
+    <string name="delete_user">حذف المستخدم</string>
+    <string name="alert_user">تحذير المستخدم</string>
+
+    <string name="write_something_please">من فضلك اكتب شيئاً</string>
+
+    <string name="create_account">إنشاء حساب</string>
+    <string name="login_account">تسجيل الدخول الي الحساب</string>
+
+    <string name="email_login">تم تسجيل البريد الإلكتروني بنجاح</string>
+    <string name="email_admin">تم تسجيل دخول المسؤول بنجاح</string>
+
+    <string name="password_or_email">هناك خطأ في البريد الإلكتروني أو كلمة السر</string>
+
+    <string name="email_exist">هذا البريد الإلكتروني موجود بالفعل</string>
+
+    <string name="admin_message_two">يرجى الانتظار حتى تقبل من المسؤولين</string>
+    <string name="admin_message_one">سيتحقق المسؤولون من معلوماتك الآن</string>
+
+    <string name="empty_post_toast">المنشور فارغ</string>
+    <string name="empty_opinion_toast">الرأي فارغ</string>
+    <string name="empty_comment_toast">التعليق فارغ</string>
+
+    <string name="post_not_valid">المنشور ليس مفيد</string>
+
+    <string name="valid_email">يرجى إدخال البريد الإلكتروني بالشكل الصحيح (example@gmail.com)</string>
+    <string name="valid_password">يجب أن تحتوي كلمة المرور على حرف كبير و 6 أحرف على الأقل</string>
+    <string name="confirm_password_error">تأكيد كلمة المرور لا يتطابق مع كلمة المرور</string>
+    <string name="send_link_text">تم إرسال الرابط إلى بريدك الإلكتروني</string>
+
+    <string name="send_link">إرسال الرابط</string>
+
+    <string name="thanks_report">شكراً لك علي بلاغك</string>
+    <string name="thanks_opinion">شكراً لك علي رأيك</string>
+    <string name="thanks_review">شكراً لك علي مراجعتك</string>
+
+    <string name="search_post">بحث عن منشور</string>
+    <string name="search_worker">بحث عن مَهني</string>
+    <string name="search_user">بحث عن مستخدم</string>
+
+    <string name="no">لا</string>
+    <string name="yes">نعم</string>
+
+    <string name="delete_report">البلاغ اتحذف</string>
+    <string name="remove_report">بلاغك اتحذف</string>
+    <string name="remove_review">مراجعتك اتحذفت</string>
+    <string name="delete_post_toast">منشورك اتحذف</string>
+    <string name="delete_opinion">رأيك اتحذف</string>
+    <string name="delete_comment">تعليقك اتحذف</string>
+
+    <string name="save_report">حفظ البلاغ</string>
+    <string name="save_post">حفظ المنشور</string>
+    <string name="save_review">حفظ المراجعة</string>
+    <string name="save_opinion">حفظ الرأي</string>
+    <string name="save_comment">حفظ التعليق</string>
+    <string name="save_data">حفظ البيانات</string>
+
+    <string name="edit_data">تعديل البيانات</string>
+
+    <string name="please_wait">من فضلك انتظر…</string>
+
+    <string name="sign_out">تسجيل الخروج</string>
+
+    <string name="sure_sign_out">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+    <string name="sure_delete_post">هل أنت متأكد أنك تريد حذف هذه المنشور؟</string>
+    <string name="sure_delete_comment">هل أنت متأكد أنك تريد حذف التعليق؟</string>
+    <string name="sure_delete_opinion">هل أنت متأكد أنك تريد حذف الرأي؟</string>
+
+    <string name="why_report_post">لماذا تبلغ عن هذا المنشور؟</string>
+    <string name="why_report_comment">لماذا تقوم بالتبليغ عن هذا التعليق؟</string>
+    <string name="why_report_opinion">لماذا تبلغ عن هذا الرأي؟</string>
+    <string name="why_report_user">لماذا تبلغ عنه؟</string>
+
+    <string name="rating_must">يجب ألا يقل التقييم عن 0.5</string>
+
+    <string name="rating_worker">التقييم : </string>
+
+    <string name="not_change_post">المنشور لم يتغير</string>
+    <string name="not_change_comment">التعليق لم يتغير</string>
+    <string name="not_change_opinion">الرأي لم يتغير</string>
+
+    <string name="post_is_added">تمت إضافة المنشور</string>
+    <string name="data_is_saved">يتم حفظ البيانات</string>
+    <string name="comment_is_added">تمت إضافة التعليق</string>
+    <string name="data_is_updated">تم تحديث البيانات</string>
+
+    <string name="cannot_add_opinion">لا يمكنك إضافة رأي ، ولكن يمكنك تعديله أو حذفه</string>
+
+    <string name="shaglni_team">فريق تيلي جوب</string>
+    <string name="app_issues">إرفاق صورة للمشاكل أو الأخطاء في التطبيق (اختياري)</string>
+
+    <string name="profile_picture">صورة الملف الشخصي</string>
+    <string name="profile_details">بيانات الملف الشخصي</string>
+
+    <string name="required">مطلوب*</string>
+
+    <string name="is_already_deleted">تم حذف هذا التعليق بالفعل</string>
+    <string name="cannot_edie">لا يمكن التعديل ، هذا التعليق محذوف بالفعل</string>
+
+    <string name="delete_comment_name">حذف التعليق</string>
+    <string name="delete_post_name">حذف المنشور</string>
+    <string name="delete_opinion_name">حذف الرأي</string>
+
+
+    <string name="admin">مشرف</string>
+
+    <string name="error_occur">يحدث خطأ</string>
+
+    <string name="view_profile">عرض الملف الشخصي</string>
+
+    <string name="reports">التقارير والمراجعات</string>
+    <string name="reviews">مراجعات التطبيق</string>
+    <string name="search_accounts">بحث في الحسابات</string>
+    <string name="accepted">مقبول</string>
+
+    <string name="user_not_found">هذا المستخدم غير موجود</string>
+
+    <string name="worker_detail">بيانات</string>
+    <string name="report_detail">تفاصيل التقارير</string>
+
+    <string name="app_main">المشرف والبيانات</string>
+    <string name="statistics">احصائيات التطبيق</string>
+
+    <string name="attach_image_report">الرجاء إرفاق صورة للشكوة</string>
+    <string name="attach_image_setup">الرجاء إرفاق صورة الملف الشخصي</string>
+    <string name="attach_image_career">يرجى إرفاق صورة المهنة الخاصة بالهوية</string>
+    <string name="attach_image">الرجاء إرفاق الصورة</string>
+    
+    <string name="israel">إسرائيل</string>
+
+
+    <string name="register_account_success">تم إنشاء حسابك بنجاح</string>
+
+    <string name="reports_workers_admin">تقارير العمال</string>
+    <string name="reports_users_admin">تقارير المستخدمين</string>
+    <string name="reports_app_admin">تقارير التطبيق</string>
+
+    <string name="reports_comments_admin">تقارير التعليقات</string>
+    <string name="reports_posts_admin">تقارير المنشورات</string>
+    <string name="post_not_found">هذا المنشور غير موجود</string>
+
+    <string name="about_you">الاراء عن</string>
+
+    <string name="cancel">إلغاء</string>
+
+    <string name="text_report_one">يمكنك مساعدتنا في تحسين التطبيق</string>
+    <string name="text_report_three">الرجاء كتابة التقرير الخاص بك بوضوح</string>
+
+    <string name="text_review_one">يمكنك مساعدتنا في زيادة المستخدمين،</string>
+    <string name="text_review_two">بأضافة مراجعتك للتطبيق</string>
+    <string name="text_review_three">قيم التطبيق الآن</string>
+    <string name="text_review_four">الرجاء كتابة مراجعتك بوضوح</string>
+    <string name="text_opinion">من فضلك اكتب رأيك بوضوح</string>
+
+</resources>

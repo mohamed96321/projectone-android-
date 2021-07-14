@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ReportWorkersDetailsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar_profile_result"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+
+
+        <ImageButton
+            android:id="@+id/arrow_btn_report_worker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_search"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:contentDescription="@string/image_post" />
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_report_worker_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_50sdp"
+            />
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_below="@id/toolbar_profile_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                app:cardCornerRadius="@dimen/_25sdp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/switch_person"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image_report_profile_from"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/profile_bg"
+                        android:src="@drawable/ic_profile"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/username_tv_report_worker_from"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_70sdp"
+                        android:text="@string/username"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="RelativeOverlap" />
+
+                    <TextView
+                        android:id="@+id/career_tv_report_worker_from"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_70sdp"
+                        android:text="@string/career"
+                        android:textStyle="bold"
+                        android:layout_below="@id/username_tv_report_worker_from"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:textSize="@dimen/_17ssp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/report_content_worker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image_report_profile_from"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/image_worker_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_240sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:layout_below="@id/report_content_worker"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:contentDescription="@string/image_career" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/image_worker_report"
+                        android:layout_marginEnd="@dimen/_70sdp"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        tools:ignore="RelativeOverlap">
+
+                        <TextView
+                            android:id="@+id/username_tv_report_worker_to"
+                            android:text="@string/username"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_17ssp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:id="@+id/career_tv_report_worker_to"
+                            android:text="@string/career"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_17ssp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            />
+
+                    </LinearLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image_report_profile_to"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/image_worker_report"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:background="@drawable/profile_bg"
+                        android:src="@drawable/ic_profile"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

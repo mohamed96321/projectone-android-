@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/alert_worker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Account is signed up successfully"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/alert_worker2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Please check your email"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/alert_worker4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Will send an email soon"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/alert_worker3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:text="To know, if you accept or not"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/alert_worker5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:text="Note: don't log in before we send a message to your email"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        />
+
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="@string/ok_btn"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="@drawable/buttons"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"
+        />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

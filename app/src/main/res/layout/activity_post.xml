@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PostActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_view"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+
+
+        <ImageButton
+            android:id="@+id/arrow_btn_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_search"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:contentDescription="@string/image_post" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_posts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_marginStart="@dimen/_50sdp"
+            />
+
+        <Button
+            android:id="@+id/post_btn"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/post_btn"
+            android:background="@drawable/post_bg"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16ssp"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/relative_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_view_name"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_profile_post"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/profile_bg"
+                    android:src="@drawable/ic_profile"
+                    android:backgroundTint="@color/colorPrimary"
+                    />
+
+                <TextView
+                    android:id="@+id/username_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:layout_marginStart="@dimen/_60sdp"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_marginEnd="@dimen/_60sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    tools:ignore="RelativeOverlap" />
+
+
+                <TextView
+                    android:layout_below="@id/username_post"
+                    android:id="@+id/career_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/career"
+                    android:layout_marginEnd="@dimen/_60sdp"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_marginStart="@dimen/_60sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <ImageView
+                    android:id="@+id/add_image_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_add_image"
+                    android:contentDescription="@string/image_post" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/post_ed_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_view_name"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:background="@drawable/input_post"
+            android:hint="@string/write_something"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/_18sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            android:autofillHints="false" />
+
+        <ImageButton
+            android:id="@+id/delete_image_btn_post"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/post_ed_text"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:contentDescription="@string/image_post" />
+
+        <ImageView
+            android:layout_below="@id/delete_image_btn_post"
+            android:id="@+id/image_view"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:contentDescription="@string/image_post" />
+
+
+    </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

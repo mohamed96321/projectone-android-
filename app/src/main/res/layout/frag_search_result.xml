@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="5dp"
+    android:background="@color/white">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/switch_person"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@id/linear"
+            android:layout_marginTop="@dimen/_5sdp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_profile_search"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/profile_bg"
+                android:src="@drawable/ic_profile"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/_8sdp"
+                />
+
+            <TextView
+                android:id="@+id/username_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                />
+
+        </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_below="@id/linear"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@color/colorPrimary"
+                />
+
+    <LinearLayout
+        android:layout_below="@id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_8sdp"
+        >
+
+    <TextView
+        android:id="@+id/search_career"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/career"
+        android:textAllCaps="false"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:textAlignment="textStart"
+        tools:ignore="RtlCompat"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_17ssp"
+        android:gravity="center_horizontal"
+        app:drawableStartCompat="@drawable/ic_briefcase"
+        android:drawablePadding="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:id="@+id/search_specialization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/specification"
+        android:textAllCaps="false"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textAlignment="textStart"
+        tools:ignore="RtlCompat"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_17ssp"
+        android:gravity="center_horizontal"
+        app:drawableStartCompat="@drawable/ic_specification_24"
+        android:drawablePadding="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:id="@+id/search_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/phone"
+        android:textAllCaps="false"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textAlignment="textStart"
+        tools:ignore="RtlCompat"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_17ssp"
+        android:gravity="center_horizontal"
+        app:drawableStartCompat="@drawable/ic_phone"
+        android:drawablePadding="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:id="@+id/search_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/address"
+        android:textAllCaps="false"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textAlignment="textStart"
+        tools:ignore="RtlCompat"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_17ssp"
+        android:gravity="center_horizontal"
+        app:drawableStartCompat="@drawable/ic_address_icon"
+        android:drawablePadding="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:id="@+id/search_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/city"
+        android:textAllCaps="false"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textAlignment="textStart"
+        tools:ignore="RtlCompat"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_17ssp"
+        android:gravity="center_horizontal"
+        app:drawableStartCompat="@drawable/ic_cities"
+        android:drawablePadding="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:id="@+id/search_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/country"
+        android:textAllCaps="false"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textAlignment="textStart"
+        tools:ignore="RtlCompat"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_17ssp"
+        android:gravity="center_horizontal"
+        app:drawableStartCompat="@drawable/ic_global"
+        android:drawablePadding="@dimen/_10sdp"
+        />
+
+    </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

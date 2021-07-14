@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/coordinator_report_opinion_me"
+    tools:context=".ReportOpinionMeActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/relative_view"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            >
+
+
+            <ImageButton
+                android:id="@+id/arrow_btn_report_opinion_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_search"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_alignParentStart="true"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:contentDescription="@string/image_post" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_report_opinion_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:layout_marginStart="@dimen/_50sdp"
+                />
+
+            <Button
+                android:id="@+id/report_btn_opinion_me"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="@string/send_btn"
+                android:background="@drawable/post_bg"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_15ssp"/>
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_below="@id/relative_view"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/username_report_opinion_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/username"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_16ssp"
+                    />
+
+                <TextView
+                    android:id="@+id/review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/this_user_report"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_16ssp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/review2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:textAlignment="center"
+                    android:text="@string/text_report_three"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_16ssp"
+                    />
+
+                <EditText
+                    android:id="@+id/ed_report_opinion_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/inputs_bg"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:maxLength="256"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/_18sdp"
+                    android:textSize="@dimen/_18ssp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:hint="@string/complaint_report"
+                    android:autofillHints="false"
+                    />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="@string/app_main">
+
+        <menu>
+
+            <group
+                android:id="@+id/first"
+                android:checkableBehavior="single">
+
+
+                <item
+                    android:id="@+id/nav_admin"
+                    android:title="@string/admin"
+                    android:icon="@drawable/ic_admin_settings"
+                    />
+
+                <item
+                    android:id="@+id/nav_search_accounts_admin"
+                    android:title="@string/search_accounts"
+                    android:icon="@drawable/ic_search_workers"
+                    />
+
+                <item
+                    android:id="@+id/nav_statistics_admin"
+                    android:title="@string/statistics"
+                    android:icon="@drawable/ic_statistics"
+                    />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="@string/reports">
+
+        <menu>
+
+            <group android:id="@+id/second"
+                android:checkableBehavior="single"
+                >
+
+                <item
+                    android:id="@+id/nav_review_admin"
+                    android:title="@string/reviews"
+                    android:icon="@drawable/ic_baseline_rate_review_24"
+                    />
+
+
+                <item
+                    android:id="@+id/reports_workers"
+                    android:title="@string/reports_workers_admin"
+                    android:icon="@drawable/ic_specification_24"
+                    />
+
+                <item
+                    android:id="@+id/reports_all_users"
+                    android:title="@string/reports_users_admin"
+                    android:icon="@drawable/ic_baseline_person_24"
+                    />
+
+                <item
+                    android:id="@+id/reports_posts"
+                    android:title="@string/reports_posts_admin"
+                    android:icon="@drawable/ic_baseline_post_add_24"
+                    />
+
+                <item
+                    android:id="@+id/reports_comments"
+                    android:title="@string/reports_comments_admin"
+                    android:icon="@drawable/ic_baseline_comment_24"
+                    />
+
+                <item
+                    android:id="@+id/reports_app"
+                    android:title="@string/reports_app_admin"
+                    android:icon="@drawable/ic_applications"
+                    />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

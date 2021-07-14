@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_user_opinion"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/profile_bg"
+        android:src="@drawable/ic_profile"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_25sdp"
+        android:id="@+id/card_view_opinion_other"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15ssp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/switch_person"
+            >
+
+            <TextView
+                android:id="@+id/tv__username_opinion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/_17ssp"
+                android:text="@string/username"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_opinion"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/tv__username_opinion"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:textAlignment="textStart"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="@dimen/_17ssp"
+                />
+
+
+            <RatingBar
+                android:layout_below="@id/tv_opinion"
+                android:id="@+id/rating_opinion_view"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:clickable="false"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:numStars="5"
+                android:stepSize="0.5"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_below="@id/card_view_opinion_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_70sdp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/image_edit_opinion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:src="@drawable/ic_edit_comment"
+                android:contentDescription="@string/btn_edit"
+                />
+
+
+
+            <TextView
+                android:id="@+id/view_edit_opinion"
+                android:layout_width="wrap_content"
+                android:text="@string/btn_edit"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap" />
+
+
+            <ImageView
+                android:id="@+id/image_delete_opinion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:contentDescription="@string/delete" />
+
+
+            <TextView
+                android:id="@+id/view_delete_opinion"
+                android:layout_width="wrap_content"
+                android:text="@string/delete"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap" />
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_report_opinion"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_report_24"
+            android:contentDescription="@string/report_user" />
+
+        <TextView
+            android:id="@+id/view_report_opinion"
+            android:layout_width="wrap_content"
+            android:text="@string/report_user"
+            android:layout_marginStart="@dimen/_28sdp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

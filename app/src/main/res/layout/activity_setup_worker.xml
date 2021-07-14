@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SetupWorkerActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="@dimen/_4sdp"
+        >
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_data"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/ed_career_setup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs_bg"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:completionThreshold="1"
+                android:hint="@string/ed_career"
+                android:padding="@dimen/_18sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="normal"
+                />
+
+            <EditText
+                android:id="@+id/ed_specialization_setup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/inputs_bg"
+                android:hint="@string/ed_specification"
+                android:inputType="text"
+                android:padding="@dimen/_18sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="normal"
+                android:autofillHints="false" />
+
+            <Button
+                android:id="@+id/btn_check_worker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/inputs_bg"
+                android:padding="@dimen/_18sdp"
+                android:text="@string/ed_attach_image"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:id="@+id/image_check_worker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:contentDescription="@string/image_career" />
+
+            <Button
+                android:id="@+id/save_profile_btn_worker"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_marginBottom="@dimen/_20ssp"
+                android:layout_gravity="center"
+                android:text="@string/btn_save_profile"
+                android:textSize="@dimen/_20ssp"
+                android:textAllCaps="false"
+                android:background="@drawable/buttons"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

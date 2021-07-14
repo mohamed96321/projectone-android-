@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="colorPrimary">#534CAF</color>
+    <color name="colorPrimaryDark">#534CAF</color>
+    <color name="colorAccent">@color/cardview_dark_background</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="light_black">#2E2E2E</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#DADADA</color>
+    <color name="toolbar_user">#3FD846</color>
+    <color name="toolbar_worker">#F61807</color>
+</resources>

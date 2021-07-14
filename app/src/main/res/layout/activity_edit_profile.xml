@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar_profile_result"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            >
+
+
+            <ImageButton
+                android:id="@+id/arrow_btn_edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_search"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_alignParentStart="true"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:contentDescription="@string/image_post" />
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:layout_marginStart="@dimen/_50sdp"
+                />
+
+            <Button
+                android:id="@+id/edit_profile_btn"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/btn_edit"
+                android:background="@drawable/post_bg"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_15ssp"/>
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar_profile_result"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                >
+
+                <TextView
+                    android:id="@+id/text_edit_image_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_picture"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_80sdp"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageButton
+                    android:id="@+id/btn_edit_profile_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_edit_images"
+                    android:contentDescription="@string/btn_edit"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_profile_edit"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_below="@id/btn_edit_profile_user"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/profile_bg"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:src="@drawable/ic_profile" />
+
+
+                <ImageButton
+                    android:id="@+id/btn_edit_cover_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image_profile_edit"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:backgroundTint="@color/white"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_edit_images"
+                    android:contentDescription="@string/btn_edit"
+                    />
+
+                <TextView
+                    android:id="@+id/text_edit_image_cover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cover Photo"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:layout_below="@id/image_profile_edit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_70sdp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/image_cover_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:visibility="gone"
+                    android:layout_below="@id/btn_edit_cover_user"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15ssp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/wonderful"
+                    android:contentDescription="@string/image_post">
+
+                </ImageView>
+
+
+                <TextView
+                    android:id="@+id/text_edit_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_details"
+                    android:textStyle="bold"
+                    android:layout_below="@id/image_cover_edit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_70sdp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/image_person"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_below="@id/text_edit_details"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:contentDescription="@string/report_user" />
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_edit_details"
+                    android:text="@string/username"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_45sdp"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                     />
+
+                <EditText
+                    android:id="@+id/edit_profile_name_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/text_name"
+                    android:autofillHints="false"
+                    android:inputType="text"
+                    android:textStyle="normal"
+                    tools:ignore="LabelFor"
+                    />
+
+                <ImageView
+                    android:id="@+id/image_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_20ssp"
+                    android:layout_below="@id/edit_profile_name_ed"
+                    android:src="@drawable/ic_phone"
+                    android:contentDescription="@string/report_user" />
+
+                <TextView
+                    android:id="@+id/text_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_profile_name_ed"
+                    android:text="@string/phone"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_45sdp"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_55sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:id="@+id/linear_layout"
+                    android:layout_below="@id/text_phone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    >
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp_edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:ccp_textSize="@dimen/_14ssp"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_showNameCode="true"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/ed_phone_edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_15ssp"
+                        android:inputType="phone"
+                        android:padding="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp"
+                        android:textStyle="normal"
+                        android:autofillHints="false"
+                        tools:ignore="LabelFor" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_below="@id/linear_layout"
+                    android:src="@drawable/ic_address_icon"
+                    android:contentDescription="@string/report_user" />
+
+                <TextView
+                    android:id="@+id/text_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear_layout"
+                    android:text="@string/address"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    android:layout_marginStart="@dimen/_45sdp"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_profile_address_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/text_address"
+                    android:autofillHints="false"
+                    android:inputType="text"
+                    tools:ignore="LabelFor"
+                    />
+
+                <ImageView
+                    android:id="@+id/image_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    android:layout_below="@id/edit_profile_address_ed"
+                    android:src="@drawable/ic_cities"
+                    android:contentDescription="@string/report_user" />
+
+                <TextView
+                    android:id="@+id/text_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_profile_address_ed"
+                    android:text="@string/city"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_45sdp"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                    />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_profile_city_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_below="@id/text_city"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:completionThreshold="1"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="normal"
+                    tools:ignore="LabelFor" />
+
+
+                <ImageView
+                    android:id="@+id/image_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    android:layout_below="@id/edit_profile_city_ed"
+                    android:src="@drawable/ic_global"
+                    android:contentDescription="@string/report_user" />
+
+
+                <TextView
+                    android:id="@+id/text_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_profile_city_ed"
+                    android:text="@string/country"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_45sdp"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                    />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_profile_country_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_below="@id/text_country"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:completionThreshold="1"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:textStyle="normal"
+                    tools:ignore="LabelFor" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

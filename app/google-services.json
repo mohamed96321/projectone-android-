@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "905645237280",
+    "firebase_url": "https://telly-d4148-default-rtdb.firebaseio.com",
+    "project_id": "telly-d4148",
+    "storage_bucket": "telly-d4148.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905645237280:android:3a4bb4439353b621988845",
+        "android_client_info": {
+          "package_name": "com.ma.socialapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905645237280-co9g06ulkemncebe7uksbkudg7gage6f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ma.socialapp",
+            "certificate_hash": "7bf9c525de640cf3ebb9cd7dd11a61a8958ac72d"
+          }
+        },
+        {
+          "client_id": "905645237280-rlug7e0rqd42mi38dop284k999ralim9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCX9nd-TGySB_ng4WLKbxTbDfhuoj8yCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905645237280-rlug7e0rqd42mi38dop284k999ralim9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905645237280:android:1b78ba80a5ac13c1988845",
+        "android_client_info": {
+          "package_name": "com.ma.tellyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905645237280-rlug7e0rqd42mi38dop284k999ralim9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCX9nd-TGySB_ng4WLKbxTbDfhuoj8yCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905645237280-rlug7e0rqd42mi38dop284k999ralim9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

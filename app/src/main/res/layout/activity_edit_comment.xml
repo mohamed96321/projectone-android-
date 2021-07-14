@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EditCommentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:id="@+id/relative_view"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            >
+
+
+            <ImageButton
+                android:id="@+id/arrow_btn_edit_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_search"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_alignParentStart="true"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:contentDescription="@string/edit_comment" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_edit_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:layout_marginStart="@dimen/_50sdp"
+                />
+
+            <Button
+                android:id="@+id/edit_comment_btn"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/btn_save_profile"
+                android:background="@drawable/post_bg"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_15ssp"/>
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relative_view"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/camera_btn_edit_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:src="@drawable/ic_baseline_camera_alt_24"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/add_comment"
+                    />
+
+        <EditText
+            android:id="@+id/edit_comment_ed_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_comment"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_65sdp"
+            android:maxLength="256"
+            android:background="@drawable/input_post"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/_18ssp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            android:autofillHints="false"
+            tools:ignore="LabelFor" />
+
+
+                <ImageButton
+                    android:id="@+id/delete_image_btn_edit_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/camera_btn_edit_comment"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_close_24"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:contentDescription="@string/image_post" />
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/delete_image_btn_edit_comment"
+            android:id="@+id/image_view_edit_comment"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:contentDescription="@string/image_post" />
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

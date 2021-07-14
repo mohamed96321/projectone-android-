@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfileSearchAdminAccountsActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_search_account"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+
+
+        <ImageButton
+            android:id="@+id/arrow_btn_profile_search_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_search"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:contentDescription="@string/image_post" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_search_account_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_marginStart="@dimen/_50sdp"
+            />
+
+
+        <ImageButton
+            android:id="@+id/alert_delete_users_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_round_info_button"
+            android:contentDescription="@string/image_post" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar_search_account"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <ImageView
+                android:id="@+id/image_cover_profile_search_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:layout_margin="@dimen/_3sdp"
+                android:background="@drawable/wonderful"
+                android:contentDescription="@string/image_post">
+
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/relative_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_110sdp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_profile_search_accounts"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/profile_bg"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:src="@drawable/ic_profile" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_below="@id/relative_profile"
+                >
+
+                <TextView
+                    android:id="@+id/profile_full_name_admin_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:gravity="center_horizontal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profile_career_admin_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/career"
+                        android:textAllCaps="false"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_17ssp"
+                        android:gravity="center_horizontal"
+                        app:drawableStartCompat="@drawable/ic_briefcase"
+                        android:drawablePadding="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/profile_specialization_admin_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/specification"
+                        android:textAllCaps="false"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_17ssp"
+                        android:gravity="center_horizontal"
+                        app:drawableStartCompat="@drawable/ic_specification_24"
+                        android:drawablePadding="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/profile_phone_admin_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/phone"
+                        android:textAllCaps="false"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_17ssp"
+                        android:gravity="center_horizontal"
+                        app:drawableStartCompat="@drawable/ic_phone"
+                        android:drawablePadding="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/profile_address_admin_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/address"
+                        android:textAllCaps="false"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_17ssp"
+                        android:gravity="center_horizontal"
+                        app:drawableStartCompat="@drawable/ic_address_icon"
+                        android:drawablePadding="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/profile_city_admin_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/city"
+                        android:textAllCaps="false"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_17ssp"
+                        android:gravity="center_horizontal"
+                        app:drawableStartCompat="@drawable/ic_cities"
+                        android:drawablePadding="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/profile_country_admin_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/country"
+                        android:textAllCaps="false"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_17ssp"
+                        android:gravity="center_horizontal"
+                        app:drawableStartCompat="@drawable/ic_global"
+                        android:drawablePadding="@dimen/_10sdp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/linear_layout"
+                >
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/cardview_dark_background"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:text="@string/activities"
+                        android:textSize="@dimen/_20ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAlignment="textStart"
+                        />
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/all_user_post_admin_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

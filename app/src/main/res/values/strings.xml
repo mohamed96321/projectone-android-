@@ -1,0 +1,807 @@
+<resources>
+
+    <string name="app_name">Telly job</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- setup activity -->
+
+    <string name="ed_fullName">Enter Full Name</string>
+    <string name="ed_career">Select Career</string>
+    <string name="ed_specification">Enter Specification</string>
+    <string name="ed_phone">Enter Phone Number</string>
+    <string name="ed_address">Enter Address</string>
+    <string name="ed_city">Select City</string>
+    <string name="ed_country">Select Country</string>
+    <string name="ed_attach_image">Attach ID Career Image</string>
+    <string name="btn_save_profile">Save</string>
+    <string name="btn_next_profile">Next</string>
+    <string name="comment_of_post">Comments of Post</string>
+    <string name="image_post_name">Image of Post</string>
+
+    <!-- register activity -->
+    <string name="ed_email">Enter Email</string>
+    <string name="ed_password">Enter Password</string>
+    <string name="ed_con_password">Confirm Password</string>
+    <string name="description_text_register">Reach to the top</string>
+    <string name="btn_register">Register</string>
+
+
+    <!-- login activity -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="description">Find best workers</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="btn_login">Log in</string>
+
+    <!-- Profile Settings -->
+    <string name="action_edit">Edit Profile</string>
+    <string name="action_become_worker">Become Worker</string>
+
+    <string-array name="careers">
+        <item>Medical Doctor</item>
+        <item>Web Developer</item>
+        <item>Android Developer</item>
+        <item>Artificial Intelligence</item>
+        <item>Analyst</item>
+        <item>Dentist</item>
+        <item>Programmer</item>
+        <item>Engineer</item>
+        <item>Pharmacist</item>
+        <item>Company</item>
+        <item>Worker</item>
+        <item>Accountant</item>
+        <item>Designer</item>
+        <item>Barber</item>
+        <item>Technical</item>
+        <item>Baker</item>
+        <item>Mechanist</item>
+        <item>Chef</item>
+        <item>Carpenter</item>
+        <item>Business Man</item>
+        <item>Biologist</item>
+        <item>Scientist</item>
+        <item>Builder</item>
+        <item>chemist</item>
+        <item>Agriculturist</item>
+        <item>Agricultural</item>
+        <item>Lawyer</item>
+        <item>Teacher</item>
+        <item>Driver</item>
+        <item>Photographer</item>
+        <item>Pilot</item>
+        <item>Trainer</item>
+        <item>Diver</item>
+        <item>Journalist</item>
+        <item>secretary</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item>Cairo</item>
+        <item>Alexandria</item>
+        <item>Giza</item>
+        <item>Qalyubia</item>
+        <item>Port Said</item>
+        <item>Suez</item>
+        <item>Gharbia</item>
+        <item>Dakahlia</item>
+        <item>Asyut</item>
+        <item>Fayoum</item>
+        <item>Sharqia</item>
+        <item>Ismailia</item>
+        <item>Aswan</item>
+        <item>Beheira</item>
+        <item>Minya</item>
+        <item>Damietta</item>
+        <item>Luxor</item>
+        <item>Qena</item>
+        <item>Beni Suef</item>
+        <item>Sohag</item>
+        <item>Monufia</item>
+        <item>Red Sea</item>
+        <item>Kafr el-Sheikh</item>
+        <item>Jaffa</item>
+        <item>Ramallah</item>
+        <item>New York</item>
+        <item>Al Quds</item>
+        <item>North Sinai</item>
+        <item>Matruh</item>
+        <item>New Valley</item>
+        <item>South Sinai</item>
+        <item>Kabul</item>
+        <item>Tirana</item>
+        <item>Algiers</item>
+        <item>Andorra la Vella</item>
+        <item>Luanda</item>
+        <item>Buenos Aires</item>
+        <item>Yerevan</item>
+        <item>Canberra</item>
+        <item>Vienna</item>
+        <item>Baku</item>
+        <item>Nassau</item>
+        <item>Manama</item>
+        <item>Dhaka</item>
+        <item>Bridgetown</item>
+        <item>Minsk</item>
+        <item>Brussels</item>
+        <item>Belmopan</item>
+        <item>Porto Novo</item>
+        <item>Thimphu</item>
+        <item>La Paz</item>
+        <item>Sucre</item>
+        <item>Sarajevo</item>
+        <item>Gaborone</item>
+        <item>Brasilia</item>
+        <item>Bandar Seri Begawan</item>
+        <item>Sofia</item>
+        <item>Ouagadougou</item>
+        <item>Gitega</item>
+        <item>Phnom Penh</item>
+        <item>Yaounde</item>
+        <item>Ottawa</item>
+        <item>Praia</item>
+        <item>Bangui</item>
+        <item>Santiago</item>
+        <item>Beijing</item>
+        <item>Bogota</item>
+        <item>Moroni</item>
+        <item>Kinshasa</item>
+        <item>Brazzaville</item>
+        <item>San Jose</item>
+        <item>Yamoussoukro</item>
+        <item>Zagreb</item>
+        <item>Havana</item>
+        <item>Nicosia</item>
+        <item>Prague</item>
+        <item>Copenhagen</item>
+        <item>Djibouti</item>
+        <item>Roseau</item>
+        <item>Santo Domingo</item>
+        <item>Dili</item>
+        <item>Quito</item>
+        <item>San Salvador</item>
+        <item>London</item>
+        <item>Malabo</item>
+        <item>Asmara</item>
+        <item>Tallinn</item>
+        <item>Mbabana</item>
+        <item>Addis Ababa</item>
+        <item>Palikir</item>
+        <item>Suva</item>
+        <item>Helsinki</item>
+        <item>Paris</item>
+        <item>Libreville</item>
+        <item>Banjul</item>
+        <item>Tbilisi</item>
+        <item>Berlin</item>
+        <item>Accra</item>
+        <item>Athens</item>
+        <item>Saint George</item>
+        <item>Saint Jone</item>
+        <item>Guatemala City</item>
+        <item>Conakry</item>
+        <item>Bissau</item>
+        <item>Georgetown</item>
+        <item>Port au Prince</item>
+        <item>Tegucigalpa</item>
+        <item>Budapest</item>
+        <item>Reykjavik</item>
+        <item>New Delhi</item>
+        <item>Jakarta</item>
+        <item>Tehran</item>
+        <item>Baghdad</item>
+        <item>Dublin</item>
+        <item>Jerusalem</item>
+        <item>Rome</item>
+        <item>Kingston</item>
+        <item>Tokyo</item>
+        <item>Amman</item>
+        <item>Nur-Sultan</item>
+        <item>Nairobi</item>
+        <item>Tarawa Atoll</item>
+        <item>Pristina</item>
+        <item>Kuwait City</item>
+        <item>Bishkek</item>
+        <item>Vientiane</item>
+        <item>Riga</item>
+        <item>Beirut</item>
+        <item>Maseru</item>
+        <item>Monrovia</item>
+        <item>Tripoli</item>
+        <item>Vaduz</item>
+        <item>Vilnius</item>
+        <item>Luxembourg</item>
+        <item>Antananarivo</item>
+        <item>Lilongwe</item>
+        <item>Kuala Lumpur</item>
+        <item>Male</item>
+        <item>Bamako</item>
+        <item>Valletta</item>
+        <item>Majuro</item>
+        <item>Nouakchott</item>
+        <item>Port Louis</item>
+        <item>Mexico City</item>
+        <item>Chisinau</item>
+        <item>Monaco</item>
+        <item>Ulaanbaatar</item>
+        <item>Podgorica</item>
+        <item>Rabat</item>
+        <item>Maputo</item>
+        <item>Nay Pyi Taw</item>
+        <item>Windhoek</item>
+        <item>Kathmandu</item>
+        <item>Amsterdam</item>
+        <item>Wellington</item>
+        <item>Managua</item>
+        <item>Niamey</item>
+        <item>Abuja</item>
+        <item>Pyongyang</item>
+        <item>Skopje</item>
+        <item>Belfast</item>
+        <item>Oslo</item>
+        <item>Muscat</item>
+        <item>Islamabad</item>
+        <item>Melekeok</item>
+        <item>Panama City</item>
+        <item>Port Moresby</item>
+        <item>Asuncion</item>
+        <item>Lima</item>
+        <item>Manila</item>
+        <item>Warsaw</item>
+        <item>Lisbon</item>
+        <item>Doha</item>
+        <item>Bucharest</item>
+        <item>Moscow</item>
+        <item>Kigali</item>
+        <item>Basseterre</item>
+        <item>Castries</item>
+        <item>Kingstown</item>
+        <item>Apia</item>
+        <item>San Marino</item>
+        <item>Sao Tome</item>
+        <item>Riyadh</item>
+        <item>Edinburgh</item>
+        <item>Dakar</item>
+        <item>Belgrade</item>
+        <item>Victoria</item>
+        <item>Freetown</item>
+        <item>Singapore</item>
+        <item>Bratislava</item>
+        <item>Ljubljana</item>
+        <item>Honiara</item>
+        <item>Mogadishu</item>
+        <item>Pretoria</item>
+        <item>Bloemfontein</item>
+        <item>Cape Town</item>
+        <item>Seoul</item>
+        <item>Juba</item>
+        <item>Madrid</item>
+        <item>Colombo</item>
+        <item>Khartoum</item>
+        <item>Paramaribo</item>
+        <item>Stockholm</item>
+        <item>Bern</item>
+        <item>Damascus</item>
+        <item>Taipei</item>
+        <item>Dushanbe</item>
+        <item>Dodoma</item>
+        <item>Bangkok</item>
+        <item>Lome</item>
+        <item>Port of Spain</item>
+        <item>Tunis</item>
+        <item>Ankara</item>
+        <item>Ashgabat</item>
+        <item>Funafuti</item>
+        <item>Kampala</item>
+        <item>Kiev</item>
+        <item>Abu Dhabi</item>
+        <item>London</item>
+        <item>Washington</item>
+        <item>Montevideo</item>
+        <item>Tashkent</item>
+        <item>Port Vila</item>
+        <item>Vatican City</item>
+        <item>Caracas</item>
+        <item>Hanoi</item>
+        <item>Cardiff</item>
+        <item>Lusaka</item>
+        <item>Harare</item>
+    </string-array>
+
+    <string-array name="countries">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>British Virgin Islands</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Canary Islands</item>
+        <item>Cape Verde</item>
+        <item>Cayman Islands</item>
+        <item>Central African Republic</item>
+        <item>Ceuta and Melilla</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo [DRC]</item>
+        <item>Congo [Republic]</item>
+        <item>Costa Rica</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Curaçao</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Côte d’Ivoire</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Europe</item>
+        <item>Faroe Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>French Guiana</item>
+        <item>French Polynesia</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guernsey</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Isle of Man</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jersey</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latin America</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macau</item>
+        <item>Macedonia [FYROM]</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Martinique</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar [Burma]</item>
+        <item>Namibia</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>New Caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>North Korea</item>
+        <item>Northern Mariana Islands</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Palestine</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Réunion</item>
+        <item>Saint Barthélemy</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Martin</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Sint Maarten</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Korea</item>
+        <item>South Sudan</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>São Tomé and Príncipe</item>
+        <item>Taiwan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Timor-Leste</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turks and Caicos Islands</item>
+        <item>U.S. Outlying Islands</item>
+        <item>U.S. Virgin Islands</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Western Sahara</item>
+        <item>Yemen</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+        <item>Åland Islands</item>
+    </string-array>
+
+    <string-array name="switch_account">
+        <item>Choose your category</item>
+        <item>User</item>
+        <item>Worker</item>
+    </string-array>
+
+    <!-- Menu Home -->
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_search">Search Workers</string>
+    <string name="menu_report">Report</string>
+    <string name="menu_review">Review</string>
+    <string name="menu_chat">Chat</string>
+    <string name="post">Create Post</string>
+    <string name="menu_logout">Log Out</string>
+    <string name="main_first">Main Activities</string>
+    <string name="main_second">App Reviews</string>
+    <string name="main_third">Log Out</string>
+    <string name="notify">Notify</string>
+    <string name="notification">Notification</string>
+    <string name="lock">Lock</string>
+    <string name="image_career">Image Career</string>
+    <string name="choose_your_category">Choose your category</string>
+    <string name="username">Username</string>
+    <string name="logo_splash">Logo Splash</string>
+    <string name="career">Career</string>
+    <string name="phone">Phone</string>
+    <string name="specification">Specification</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="country">Country</string>
+    <string name="wrong_action">What is wrong action,</string>
+    <string name="happen">that happened from</string>
+    <string name="prove">Attach a picture of report</string>
+    <string name="rate_worker">Add your opinion to</string>
+    <string name="rating">Rate</string>
+    <string name="opinion_about">Opinions About</string>
+    <string name="add_post">Add Post</string>
+    <string name="opinion_help">Your opinion will help you to choose the best workers, that will treat with them</string>
+    <string name="view_opinion_me">View Opinions About You</string>
+
+    <string name="image_logo_login">Image Logo</string>
+    <string name="image_post">Image Post</string>
+    <string name="btn_close_image">Delete Image</string>
+    <string name="profile_data">Profile Data</string>
+
+    <string name="this_user_report">What did this user do to report his opinion</string>
+
+    <string name="opinion_not_deleted">This opinion is deleted already</string>
+    <string name="opinion_not_edit">Cannot edit, this opinion is deleted already</string>
+
+    <string name="delete_user">Delete User</string>
+    <string name="alert_user">Alert User</string>
+
+    <string name="admin_message_two">Please wait until you accept from admins</string>
+    <string name="admin_message_one">Admins will check your information now</string>
+
+    <string name="post_btn">Post</string>
+    <string name="send_btn">Send</string>
+    <string name="btn_edit">Edit</string>
+    <string name="attach_image_post">Image</string>
+    <string name="write_something">Write Something?</string>
+    <string name="write_opinion">Write your opinion</string>
+    <string name="complaint_report">Write your complaint?</string>
+    <string name="write_comment">Write comment</string>
+    <string name="btn_comment">Comment</string>
+    <string name="date_post">Date</string>
+    <string name="time_post">Time</string>
+    <string name="like_post">Like Post</string>
+    <string name="copy_right">Copyright © 2021. All rights reserved</string>
+    <string name="make_new_account">Make a new account</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="search">Search</string>
+    <string name="activities">Posts</string>
+    <string name="shaglni_team">Telly job Team</string>
+    <string name="report_user">Report</string>
+    <string name="opinion_user">Add Opinion</string>
+
+    <string name="search_career_worker">Search now about the job that you want</string>
+
+    <string name="email_wrong">Email not correct</string>
+
+    <string name="thanks_report">Thanks to your report</string>
+    <string name="thanks_opinion">Thanks to your opinion</string>
+    <string name="thanks_review">Thanks to your review</string>
+    <string name="rating_must">The rating must be at least 0.5</string>
+
+    <string name="delete_report">Report is deleted</string>
+    <string name="remove_report">Your Report is removed</string>
+    <string name="remove_review">Your Review is removed</string>
+    <string name="delete_post_toast">Post is deleted</string>
+    <string name="delete_opinion">Your Opinion is removed</string>
+    <string name="delete_comment">Comment is deleted</string>
+
+    <string name="password_or_email">Email or password not correct</string>
+
+    <string name="email_exist">This email already existing</string>
+
+    <string name="empty_post_toast">Post is empty</string>
+    <string name="empty_opinion_toast">Opinion is empty</string>
+    <string name="empty_comment_toast">Comment is empty</string>
+
+    <string name="post_not_valid">Post not valid</string>
+
+    <string name="israel">Israel</string>
+
+    <string name="cannot_add_opinion">You cannot add an opinion, but you can edit it or delete</string>
+
+    <string name="register_account_success">Your account is created successfully</string>
+
+    <string name="attach_image_report">Please Attach Report Image</string>
+    <string name="attach_image_setup">Please Attach Profile Image</string>
+    <string name="attach_image_career">Please Attach ID Career Image</string>
+    <string name="attach_image">Please Attach Image</string>
+
+    <string name="save_report">Save Report</string>
+    <string name="save_post">Save Post</string>
+    <string name="save_review">Save Review</string>
+    <string name="save_opinion">Save Opinion</string>
+    <string name="save_comment">Save Comment</string>
+    <string name="save_data">Save Data</string>
+
+    <string name="please_wait">Please wait…</string>
+
+    <string name="update_post">Post is updated</string>
+    <string name="update_comment">Comment is updated</string>
+    <string name="update_opinion">Opinion is updated</string>
+
+    <string name="sign_out">Sign Out</string>
+
+    <string name="error_occur">Error occurs</string>
+
+    <string name="add_opinion">Add Opinion</string>
+    <string name="view_opinion">View Opinions</string>
+
+    <string name="delete_comment_name">Delete Comment</string>
+    <string name="delete_post_name">Delete Post</string>
+    <string name="delete_opinion_name">Delete Opinion</string>
+
+    <string name="required">Required*</string>
+
+    <string name="post_is_added">Post is added</string>
+    <string name="data_is_saved">Data is saved</string>
+    <string name="comment_is_added">Comment is added</string>
+    <string name="data_is_updated">Data is updated</string>
+
+    <string name="sure_sign_out">Are you sure you want to log out?</string>
+    <string name="sure_delete_post">Are you sure you want to delete this post?</string>
+    <string name="sure_delete_comment">Are you sure you want to delete the comment?</string>
+    <string name="sure_delete_opinion">Are you sure you want to delete the opinion?</string>
+
+    <string name="not_change_post">Post not changed</string>
+    <string name="not_change_comment">Comment not changed</string>
+    <string name="not_change_opinion">Opinion not changed</string>
+
+    <string name="why_report_post">Why do you report this post?</string>
+    <string name="why_report_comment">Why do you report this comment?</string>
+    <string name="why_report_opinion">Why do you report this opinion?</string>
+    <string name="why_report_user">Why do you report him?</string>
+
+    <string name="edit_data">Edit Data</string>
+
+    <string name="opinion_user_view">View Opinions</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="back">Back</string>
+    <string name="sharda">-</string>
+    <string name="app_issues">Attach a picture of issues or bugs (Optional)</string>
+    <string name="text_forget_one">Reset password by enter your email</string>
+    <string name="text_forget_two">Will send a message to your email,</string>
+    <string name="text_forget_three">to reset password</string>
+    <string name="text_forget_four">If you forget your email,</string>
+    <string name="text_forget_five">create a new account</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="view_profile">View Profile</string>
+
+    <string name="ok_btn">OK</string>
+    <string name="email_forget">Enter Your Email</string>
+    <string name="reset_btn">Reset</string>
+    <string name="career_not_found">This career not found</string>
+    <string name="user_not_found">This user not found</string>
+
+    <string name="delete">Delete</string>
+    <string name="hide">Hide</string>
+
+    <string name="undo">Undo</string>
+
+    <string name="email_login">Email is logged in successfully</string>
+    <string name="email_admin">Admin is logged in successfully</string>
+
+    <string name="login_account">Login Account</string>
+
+    <string name="create_account">Create Account</string>
+    <string name="send_link">Send Link</string>
+
+    <string name="search_post">Search Post</string>
+    <string name="search_worker">Search Worker</string>
+    <string name="search_user">Search User</string>
+
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+    <string name="valid_email">Please enter a valid email (example@gmail.com)</string>
+    <string name="valid_password">Password must contain upper letter and 6 characters at least</string>
+    <string name="confirm_password_error">Confirm Password is not match with Password</string>
+    <string name="send_link_text">Link is sent to your email</string>
+
+    <string name="write_something_please">Please write something</string>
+
+    <string name="report_detail">Report Details</string>
+
+    <string name="about_you">Opinions About You</string>
+
+    <string name="search_chat_user">Start Chat</string>
+    <string name="setting_app">App Settings</string>
+    <string name="settings">Settings</string>
+
+    <string name="edit_comment">Edit Comment</string>
+    <string name="edit_post">Edit Post</string>
+
+    <string name="edit_profile">Edit Profile</string>
+
+    <string name="admin">Admin</string>
+    <string name="reports">Reports and Reviews</string>
+    <string name="reviews">Reviews App</string>
+    <string name="search_accounts">Search Accounts</string>
+
+    <string name="delete_post">Delete Post</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="accepted">Accepted</string>
+    <string name="worker_detail">Data of</string>
+    <string name="reports_workers_admin">Reports Workers</string>
+    <string name="reports_users_admin">Reports Users</string>
+    <string name="reports_app_admin">Reports App</string>
+
+    <string name="reports_comments_admin">Reports Comments</string>
+    <string name="reports_posts_admin">Reports Posts</string>
+    <string name="post_not_found">This post not found</string>
+
+
+    <string name="app_main">Admin and Data</string>
+    <string name="statistics">Statistics App</string>
+
+    <string name="edit_opinion">Edit Opinion</string>
+
+    <string name="report_comment">Report Comment</string>
+    <string name="report_post">Report Post</string>
+    <string name="report_opinion">Report Opinion</string>
+
+    <string name="question">report him?</string>
+
+    <string name="rating_worker">Rating : </string>
+
+    <string name="is_already_deleted">This comment is deleted already</string>
+    <string name="cannot_edie">Cannot edit, this comment is deleted already</string>
+
+    <string name="text_report_one">You can help us to improve the application,
+        by telling us any debugs or issues, these will appear in the application</string>
+    <string name="text_report_three">Please write your report clearly</string>
+
+    <string name="text_review_one">You can help us to increase the users,</string>
+    <string name="profile_worker">Profile of </string>
+    <string name="text_review_two">that will use the application</string>
+    <string name="text_review_three">Rate App Now</string>
+    <string name="text_review_four">Please write your review clearly</string>
+    <string name="text_opinion">Please write your opinion clearly</string>
+
+</resources>

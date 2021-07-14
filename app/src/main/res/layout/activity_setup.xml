@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SetupActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="@dimen/_4sdp"
+        >
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_data"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <Spinner
+                android:id="@+id/sp_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/switch_person"
+                android:entries="@array/switch_account"
+                android:gravity="center_horizontal"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_profile"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/profile_bg"
+                android:src="@drawable/ic_profile"
+                android:backgroundTint="@color/colorPrimary"
+                />
+
+
+            <EditText
+                android:id="@+id/ed_full_name_setup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs_bg"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:hint="@string/ed_fullName"
+                android:inputType="text"
+                android:padding="@dimen/_18sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="normal"
+                android:drawablePadding="@dimen/_15sdp"
+                android:autofillHints="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="@dimen/_30sdp"
+                >
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:ccp_textSize="@dimen/_14ssp"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccp_showNameCode="true"
+                    android:background="@drawable/inputs_bg"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    />
+
+                <EditText
+                    android:id="@+id/ed_phone_setup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/inputs_bg"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:hint="@string/ed_phone"
+                    android:inputType="phone"
+                    android:padding="@dimen/_18sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17ssp"
+                    android:textStyle="normal"
+                    android:autofillHints="false" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ed_address_setup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs_bg"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:hint="@string/ed_address"
+                android:inputType="text"
+                android:padding="@dimen/_18sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="normal"
+                android:autofillHints="false" />
+
+            <AutoCompleteTextView
+                android:id="@+id/ed_city_setup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs_bg"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:completionThreshold="1"
+                android:hint="@string/ed_city"
+                android:padding="@dimen/_18sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="normal"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/ed_country_setup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs_bg"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:completionThreshold="1"
+                android:hint="@string/ed_country"
+                android:padding="@dimen/_18sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="normal"/>
+
+            <Button
+                android:id="@+id/save_profile_btn"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/buttons"
+                android:text="@string/btn_save_profile"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
